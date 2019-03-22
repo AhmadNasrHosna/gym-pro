@@ -9,9 +9,6 @@
 ***/
 
 button {
-  border: 1px solid transparent; 
-  background: #3366cc;
-  color: #fff; 
   font: inherit; 
   letter-spacing: inherit; 
   cursor: pointer;  

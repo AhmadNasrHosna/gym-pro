@@ -1,6 +1,11 @@
 :root {
-  --color-1: #ea6566;
-
+  --color-1: hsl(203, 22%, 23%);
+  --color-2: #f64060;
+  --color-3: hsla(203, 22%, 23%, .75);
+  --color-5: #00a2c7;
+  --border-1: #e5e7e9;
+  --border-2: #b6bbbf;
+  --border-3: #dde0e3;
   --black: #000;
   --white: #fff;
 }

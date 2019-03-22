@@ -42,9 +42,9 @@
   }
 
   &--pipe-separator {
-    li + li {
-      &::before {
-        content: "|";
+    li:not(:last-child) {
+      &::after {
+        content: " • ";
         margin-inline: 10px;
       }
     }

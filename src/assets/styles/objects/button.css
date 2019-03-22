@@ -2,20 +2,25 @@
   display: inline-block;
   height: 5.9rem;
   @mixin line-height 5.4;
-  padding-inline: 3.8em;
+  padding-inline: 3em;
   font-family: inherit;
-  cursor: pointer;
   text-align: center;
   white-space: nowrap;
-  font-family: "adam.cg_proregular", sans-serif;
-  letter-spacing: .3em;
-  @mixin font-size 1.1;
-
+  border: 1px solid transparent; 
+  background: #3366cc;
+  color: #fff; 
+  border-radius: 4px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  letter-spacing: .01em;
+  box-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.12);
+  
   &:focus {
     outline: none;
     transform: translate(1px, 1px);
     box-shadow: none;
   }
+
   &--plain {
     appearance: none;
     background: transparent;
@@ -24,9 +29,18 @@
     padding: 0;
     box-shadow: none;
   }
+
   &--primary {
-    background-color: var(--color-1);
-    color: var(--white);
+    background: var(--color-1);
+    color: hsla(0, 0%, 100%, .95);
+    @mixin font-size 1.9;
+    padding: 0 1.8em;
+    height: 4.5rem;
+    line-height: 4.7rem;
+
+    &:hover {
+      color: #fff;
+    }
   }
   
   &--secondary {
