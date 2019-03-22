@@ -1,0 +1,8 @@
+/* Fonts */
+ @import '../stylesheets/coco';
+ @import '../stylesheets/spartanmb';
+
+:root {
+  --primary-font: "Spartan MB", system-ui, sans-serif;
+  --secondary-font: "Cocogoose", sans-serif;
+}

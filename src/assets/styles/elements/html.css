@@ -1,0 +1,8 @@
+html {
+  font-size: 62.5%;
+}
+
+::selection {
+  background: #222;
+  color: hsla(0, 0%, 100%, .9);
+}

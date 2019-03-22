@@ -1,0 +1,27 @@
+header.site-header
+  .container
+    .site-header__inner.clearfix
+      .site-header__logo.pull-start
+        a(href="#", class="carnivale-logo")
+        
+          picture
+            source(media="(min-width: 530px)", srcset="assets/images/car-logo-w.png")
+            img(src="assets/images/car-logo-w-s.png", alt="Carnivale logo")
+      .site-header__menu.pull-end
+        button.site-header__menu__drawer-trigger.jsHeaderDrawerTrigger.button--plain
+          span Menu
+          .menu-icon
+            span.middle
+        .site-header__menu__drawer.jsHeaderDrawer
+          nav
+            ul.list.list--no-bullets
+              li
+                a(href="#", class="to-uppercase") Home
+              li
+                a(href="#", class="to-uppercase") Products
+              li
+                a(href="#", class="to-uppercase") Stories
+              li
+                a(href="#", class="to-uppercase") Contatct
+          .carnivale-logo.align-center
+            img(src="assets/images/car-logo-w-s.png", alt="Carnivale logo")
