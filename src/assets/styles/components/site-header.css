@@ -1,6 +1,6 @@
 .site-header {
   border-bottom: 2px solid var(--border-3);
-  background: #fff;
+  background: hsla(203, 22%, 23%, .01);
   
   &__inner {
     display: flex;
@@ -205,7 +205,7 @@
         &:active {
           transform: translateY(1px)
         }
-        
+
         &:hover, &:focus {
           span::before { width: 100%; }
         }
