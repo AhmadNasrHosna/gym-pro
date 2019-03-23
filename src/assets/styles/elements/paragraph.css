@@ -3,6 +3,6 @@ p {
   line-height: 1.85;
   @mixin font-size 1.4;
   /* word-break: break-all; */
-  line-height: 2;
+  line-height: 1.6;
   color: hsl(0, 0%, 60%);
 }

@@ -28,7 +28,6 @@ const { src, dest, task, watch, series, parallel } = require("gulp"),
         postcssPresetEnv          = require('postcss-preset-env'),
         cssnano                   = require('cssnano'),
 
-   
         svgSprite                 = require("gulp-svg-sprite"),
         svg2png                   = require("gulp-svg2png"),
 
@@ -157,7 +156,7 @@ function styles() {
                 // Webpack configuration
                 entry: {
                     App: jsAppSRC, // App.js
-                    /* 'vendor/Vendor': jsVendorSRC, //Vendor.js */
+                    'vendor/Vendor': jsVendorSRC, //Vendor.js 
                 },
                 output: {
                     filename: '[name].js' 
@@ -369,9 +368,8 @@ function injectFileNames() {
 	//.pipe(inject(src([buildDir + 'assets/styles/**/*.css'], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
     .pipe(inject(src(buildDir + 'assets/styles/App-index*.css', {read: false}), {name: 'index', ignorePath: '/docs', addRootSlash: false}))
     .pipe(inject(src(buildDir + 'assets/styles/App-sign*.css', {read: false}), {name: 'sign', ignorePath: '/docs', addRootSlash: false}))
-    .pipe(inject(src(buildDir + 'assets/styles/App-resources*.css', {read: false}), {name: 'resources', ignorePath: '/docs', addRootSlash: false}))
-    .pipe(inject(src(buildDir + 'assets/styles/App-article*.css', {read: false}), {name: 'article', ignorePath: '/docs', addRootSlash: false}))
- 
+    .pipe(inject(src(buildDir + 'assets/styles/App-profile*.css', {read: false}), {name: 'profile', ignorePath: '/docs', addRootSlash: false}))
+
     // All vendor js files inside head tag
 	.pipe(inject(src(buildDir + 'assets/scripts/vendor/*.js', {read: false}), {name: 'vendor', ignorePath: '/docs', addRootSlash: false}))
 	// All main js files before body close tag

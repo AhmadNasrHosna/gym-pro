@@ -70,7 +70,7 @@
     input {
       width: 100%;
       border: 2px solid var(--border-2);
-      padding: .8em 1.2em .75em;
+      padding: .85em 1.2em .7em;
       @mixin font-size 1.35;
       color: var(--color-1);
       border-radius: 4px;
@@ -85,7 +85,7 @@
 
       &::placeholder {
         color: rgba(46, 62, 72, 0.6);
-        font-weight: 500;
+        font-weight: 600;
       }
     }
 

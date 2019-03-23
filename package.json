@@ -49,7 +49,19 @@
     "webpack-node-externals": "^1.7.2",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fslightbox": "^1.5.2",
+    "glightbox": "^2.0.0",
+    "lg-autoplay": "^1.0.4",
+    "lg-fullscreen": "^1.1.0",
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.1.0",
+    "lg-thumbnail": "^1.1.0",
+    "lg-video": "^1.2.2",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.12"
+  },
   "scripts": {
     "dev": "webpack --mode development ./src/assets/scripts/App.js --output ./.tmp/scripts/",
     "build": "webpack --mode production ./src/assets/scripts/App.js --output ./.tmp/scripts/"

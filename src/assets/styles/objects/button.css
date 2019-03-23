@@ -45,60 +45,34 @@
   }
   
   &--secondary {
-    background-color: var(--black);
-    color: var(--white);
+    @mixin font-size 1.9;
+    padding: 0 1.3em;
+    height: 3.8rem;
+    line-height: 4rem;
+    transition: opacity 200ms ease;
+    letter-spacing: .04em;
+    
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  &--color-5 {
+    background: var(--color-5);
+    color: hsla(0, 0%, 100%, .95);
   }
   
+  &--color-1 {
+    background: var(--color-1);
+    color: hsla(0, 0%, 100%, .95);
+  }
+
   &--black {
     background-color: var(--black);
     color: var(--white);
   }
 
   &--cta {
-    color: var(--color-1);
-    padding: 1.4em 0 1.2em;
-    font-family: var(--secondary-font);
-    @mixin font-size 1.25;
-    letter-spacing: 0.25em;
-    display: flex;
-    align-items: center;
-    max-width: 200px;
-    margin-inline: auto;
-    @mixin at Medium { margin-inline: 0 }
-    position: relative;
-    transition: all 300ms ease;
-    z-index: 1;
-
-    svg {
-      fill: var(--color-1);
-      margin-inline-start: auto;
-      transition: all 300ms ease;
-    }
-
-    &::after {
-      display: block;
-      content: "";
-      background: var(--color-1);
-      width: 10%; height: 20px;
-      position: absolute;
-      left: -40px; bottom: 17px;
-      transition: all 300ms cubic-bezier(1, -0.32, 0, 1.13);
-      z-index: -1;
-    }
-
-    &:hover {
-      color: #fff;
-      svg { 
-        fill: #fff;
-        transform: translateX(-15px)
-      }
-
-      &::after {
-        width: calc(100% + 15px); height: 100%;
-        left: -15px; bottom: 0;
-      }
-     
-    }
    
   }
 

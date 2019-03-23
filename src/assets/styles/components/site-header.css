@@ -1,7 +1,7 @@
 .site-header {
   border-bottom: 2px solid var(--border-3);
   background: hsla(203, 22%, 23%, .01);
-  box-shadow: 0 2px 15px hsla(203, 22%, 23%, .09);
+  box-shadow: 0 2px 15px hsla(203, 22%, 23%, .1);
   
   &__inner {
     display: flex;
@@ -9,7 +9,10 @@
     align-items: center;
     padding-block: 1.2em;
 
-    > * + * { margin-left: 5rem; }
+    > * + * { 
+      margin-left: 3rem;
+      @mixin at Large { margin-left: 5rem }
+    }
   }
 
   &__middle {
@@ -24,7 +27,7 @@
   &__logo {
     h1 {
       font-family: var(--secondary-font);
-      @mixin font-size 3;
+      @mixin font-size 2; @mixin at Large { @mixin font-size 3 }
       color: var(--color-1);
       letter-spacing: -.03em;
       position: relative;
@@ -39,13 +42,14 @@
       input[type=search] {
         width: 100%;
         border: 1px solid var(--border-2);
-        padding: .8em 1.2em .75em;
+        padding: .85em 4.2em .7em 1.2em;
         @mixin font-size 1.35;
         color: var(--color-1);
         border-radius: 2px;
         box-shadow: 0 1px 1px hsla(0, 0%, 0%, .1);
         transition: all 200ms ease-in-out;
-
+        font-weight: 800;
+        
         &:focus {
           outline: none;
           box-shadow: 0 1px 1px hsla(0, 0%, 0%, .1), 0 0 0 1px var(--border-2);
@@ -53,6 +57,7 @@
 
         &::placeholder {
           color: var(--color-3);
+          font-weight: 600;
         }
       }
 
@@ -125,7 +130,7 @@
         }
       }
       &::after {
-        margin-inline: 1.5rem !important;
+        @mixin at Large { margin-inline: 1.5rem !important; }
       }
     }
   }
