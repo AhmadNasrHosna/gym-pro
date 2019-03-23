@@ -44,8 +44,11 @@
   &--pipe-separator {
     li:not(:last-child) {
       &::after {
-        content: " • ";
-        margin-inline: 10px;
+        content: " / ";
+        margin-inline: 1rem;
+        position: relative;
+        left: -2px;
+        opacity: .3;
       }
     }
   }

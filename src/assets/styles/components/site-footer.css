@@ -1,8 +1,9 @@
 .site-footer {
   background: var(--color-1);
   color: #fff;
-  @mixin font-size 1.4;
-
+  @mixin font-size 1.5;
+  border-top: 8px solid hsl(203, 30%, 17%);
+  
   > div:not(:last-child) {
     border-bottom: 1px solid hsla(0,0%,100%,.2);
   }
@@ -22,7 +23,8 @@
           a {
             color: hsla(0, 0%, 100%, .7);
             transition: all 200ms ease;
-
+            font-weight: 700;
+            
             &:hover {
               color: #fff;
             }
@@ -53,7 +55,8 @@
         border-radius: 4px;
         transition: all 200ms ease;
         font-weight: 600;
-
+        @mixin font-size 1.45;
+        color: hsla(0, 0%, 100%, .85);
         svg {
           margin-bottom: 1rem;
           fill: hsla(0, 0%, 100%, .85);
@@ -61,7 +64,7 @@
         }
 
         &:hover {
-          background: hsla(0,0%,100%,.2);
+          background: var(--color-5);
           svg {
             fill: #fff;
           }
@@ -88,7 +91,7 @@
   }
 
   &__copy {
-    @mixin font-size 1.1;
+    @mixin font-size 1.25;
     letter-spacing: .04em;
 
     .container {

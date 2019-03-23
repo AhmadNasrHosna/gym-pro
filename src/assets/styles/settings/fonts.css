@@ -1,10 +1,9 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Allan:400,700|Chewy|Sarina');
 
  @import '../stylesheets/coco';
  @import '../stylesheets/spartanmb';
 
 :root {
-  --primary-font: "Spartan MB", system-ui, sans-serif;
+  --primary-font: "Gothic A1", system-ui, sans-serif;
   --secondary-font: "Cocogoose", sans-serif;
 }

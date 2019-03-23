@@ -3,7 +3,8 @@ header.site-header
     .site-header__inner
       .site-header__left
         .site-header__logo
-          h1.no-m-block Good Gym.
+          h1.no-m-block
+            a(href="#") good gym.
       .site-header__middle
         .site-header__search-nav
           form.search-nav__form(action="")
@@ -12,11 +13,11 @@ header.site-header
             button(type="submit", class="button--plain")
               span.visually-hidden Search
               svg(width='23', height='23', viewBox='0 0 24 24')
-                use(xlink:href='#search-tall')
+                use(xlink:href='#search')
 
       .site-header__right
         nav.site-header__menu-nav
-          ul.list.list--inline.list--no-bullets
+          ul.list.list--inline.list--no-bullets.list--pipe-separator
             li
               a(href="#", class="active-page ") Home
             li
@@ -29,11 +30,12 @@ header.site-header
             a(href="#")
               img(src="assets/images/user-avatar.jpg", width="34px", height="34px" alt="User Avatar")
               .user-nav__avatar__icon
-                svg(width='7', height='7', viewBox='0 0 512 512')
-                  use(xlink:href='#chevron-down')
+                svg(width='7', height='7', viewBox='0 0 100 100', transform="rotate(-90)")
+                  use(xlink:href='#chevron-down-bold')
 
         .site-header__setting-nav
           button.setting-nav__drawer-toggle.button--plain
+            div.visually-hidden Setting Menu
             span
           .setting-nav__drawer
             ul.setting-nav__drawer__menu.list.list--inline.list--no-bullets

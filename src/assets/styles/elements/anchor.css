@@ -2,3 +2,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+main {
+  a {
+    &:not([class]) {
+      color: var(--color-5);
+      transition: all 200ms ease;
+      border-bottom: 2px solid transparent;
+  
+      &:hover {
+        opacity: .8;
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+main.site-content
+  .signup-form
+    .container
+      form.form.m-auto--inline.align-center
+        .form__text
+          h2.no-m-bottom Sign up
+          p Good Gym helps you connect and share your exercises with the people.
+          p.form__login-link 
+            | Already have an account? 
+            a(href='#0') Login
+        .form__social-btns
+          .form__social-btns__wrapper
+            button.button.button--outline
+              svg(width='22', height='22')
+                use(xlink:href='#icon-twitter')
+              span Join using Twitter
+            button.button.button--outline
+              svg(width='20', height='20')
+                use(xlink:href='#icon-facebook-square')
+              span Join using Facebook
+          p.or-word.no-m-bottom or
+
+        .form__userfullname
+          .form-control
+            label.form-label(for='inputText1') First name
+            input#inputEmail1(type='text', name='inputText1')
+          .form-control
+            label.form-label(for='inputText2') Last name
+            input#inputEmail1(type='text', name='inputText2')
+        .form-control
+          label.form-label(for='inputEmail1') Email
+          input#inputEmail1(type='email', name='inputEmail1', placeholder='mail@myemail.com')
+        .form-control
+          label.form-label(for='inputPassword1') Password
+          input#inputPassword1(type='password', name='inputPassword1', placeholder='your password')
+
+        .form__submit
+          button.button.button--primary.button--block Join
+
+        p.form__terms
+          | By joining, you agree to the 
+          a(href='#0') Terms
+          |  and 
+          a(href='#0') Privacy Policy
+          | .

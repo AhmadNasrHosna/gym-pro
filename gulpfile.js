@@ -368,10 +368,10 @@ function injectFileNames() {
 	// All CSS files
 	//.pipe(inject(src([buildDir + 'assets/styles/**/*.css'], {read: false}), {ignorePath: '/docs', addRootSlash: false}))
     .pipe(inject(src(buildDir + 'assets/styles/App-index*.css', {read: false}), {name: 'index', ignorePath: '/docs', addRootSlash: false}))
-/*     .pipe(inject(src(buildDir + 'assets/styles/App-index2*.css', {read: false}), {name: 'index2', ignorePath: '/docs', addRootSlash: false}))
+    .pipe(inject(src(buildDir + 'assets/styles/App-sign*.css', {read: false}), {name: 'sign', ignorePath: '/docs', addRootSlash: false}))
     .pipe(inject(src(buildDir + 'assets/styles/App-resources*.css', {read: false}), {name: 'resources', ignorePath: '/docs', addRootSlash: false}))
     .pipe(inject(src(buildDir + 'assets/styles/App-article*.css', {read: false}), {name: 'article', ignorePath: '/docs', addRootSlash: false}))
- */
+ 
     // All vendor js files inside head tag
 	.pipe(inject(src(buildDir + 'assets/scripts/vendor/*.js', {read: false}), {name: 'vendor', ignorePath: '/docs', addRootSlash: false}))
 	// All main js files before body close tag

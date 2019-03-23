@@ -1,0 +1,35 @@
+main.site-content
+  .login-form
+    .container
+      form.form.m-auto--inline.align-center
+        .form__text
+          h2.no-m-bottom Log in
+          p Good Gym helps you connect and share your exercises with the people.
+          
+        .form__social-btns
+          .form__social-btns__wrapper
+            button.button.button--outline
+              svg(width='22', height='22')
+                use(xlink:href='#icon-twitter')
+              span Login with Twitter
+            button.button.button--outline
+              svg(width='20', height='20')
+                use(xlink:href='#icon-facebook-square')
+              span Login with Facebook
+          p.or-word.no-m-bottom or
+
+        .form-control
+          label.form-label(for='inputEmail1') Email
+          input#inputEmail1(type='email', name='inputEmail1', placeholder='mail@myemail.com')
+        .form-control
+          .form-control__text
+            label.form-label(for='inputPassword1') Password
+            a(href='#0') Forgot?
+          input#inputPassword1(type='password', name='inputPassword1', placeholder='your password')
+
+        .form__submit
+          button.button.button--primary.button--block Login
+
+        p.form__sign-up-link
+          | Don't have an account? 
+          a(href='#0') Get started
