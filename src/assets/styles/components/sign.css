@@ -57,11 +57,13 @@
     margin-top: 2rem;
     display: flex;
 
+
     > div {
       flex-basis: calc(50% - .65rem);
-
       &:not(:last-of-type) { margin-right: 1.3rem }
     }
+
+    .form-control:first-child { margin-bottom: 1.3rem }
   }
 
   .form-control {
@@ -83,6 +85,7 @@
 
       &::placeholder {
         color: rgba(46, 62, 72, 0.6);
+        font-weight: 500;
       }
     }
 
@@ -120,8 +123,6 @@
 
   &__submit { button { font-weight: 800 } }
 
-  &__sign-up-link, &__terms, &__submit  { margin-top: 3rem }
-
   &__sign-up-link, &__terms, &__login-link  {
     font-weight: 500;
     color: var(--color-1);
@@ -133,4 +134,83 @@
     @mixin font-size 1.3;
     letter-spacing: .02em;
   }
+
+  &__sign-up-link,
+  &__terms, 
+  &__membership-options, 
+  &__submit { margin-top: 3rem }
+
+  &__membership-options {
+    text-align: left;
+    @media only screen and (max-width: 500px) {
+          display: flex;
+          flex-direction: column;
+       }
+    label {
+       @media only screen and (max-width: 500px) {
+          &:not(:last-child) {
+             margin-bottom: 1.4rem;
+          }
+       }
+       text-transform: none;
+       &:not(:last-child) {
+          margin-right: 1.6rem;
+       }
+    }
+  }
+
 }
+
+/* CUSTOM INPUT RADIO
+---------------------- */
+
+.radio {
+  position: relative;
+  cursor: pointer;
+  @mixin font-size 1.4;
+  display: inline-flex;
+  color: var(--color-1);
+  font-weight: 700;
+
+  .label {
+     position: relative;
+     display: inline-block;
+     vertical-align: text-top;
+     margin-right: 10px;
+     width: 20px;
+     height: 20px;
+     border: 2px solid var(--border-2);
+     border-radius: 100%;
+     -webkit-tap-highlight-color: transparent;
+
+     &::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: var(--color-5);
+        transform: scale(0);
+        transition: all .2s ease;
+        opacity: .08;
+        pointer-events: none;
+     }
+  }
+
+  &:hover .label::after { transform: scale(3.6) }
+
+  input[type="radio"] {
+     &:checked + .label { border-color: var(--border-3) }
+
+     &:checked + .label::after {
+        transform: scale(1);
+        transition: all .2s cubic-bezier(.35, .9, .4, .9);
+        opacity: 1;
+     }
+
+     &.hidden { display: none }
+  }
+}
+

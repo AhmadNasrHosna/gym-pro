@@ -34,6 +34,16 @@ main.site-content
           label.form-label(for='inputPassword1') Password
           input#inputPassword1(type='password', name='inputPassword1', placeholder='your password')
 
+        .form__membership-options
+          label.radio(for='userMember')
+            input(type="radio", name="membership", id="userMember", class="hidden", checked)
+            span.label
+            | User Member
+          label.radio(for='gymMember')
+            input(type="radio", name="membership", id="gymMember", class="hidden")
+            span.label
+            | GYM Member
+
         .form__submit
           button.button.button--primary.button--block Join
 
