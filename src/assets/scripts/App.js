@@ -1,4 +1,5 @@
 
+import GLightbox from 'glightbox'
 
 ;( function ( document, window, index )
 {
@@ -30,3 +31,14 @@
 
 
 // -------
+
+var lightbox = GLightbox();
+var lightboxDescription = GLightbox({selector: 'glightbox2'});
+var lightboxVideo = GLightbox({
+	selector: 'glightbox3',
+	jwplayer: {
+		api: 'https://content.jwplatform.com/libraries/QzXs2BlW.js',
+		licenseKey: 'imB2/QF0crMqHks7/tAxcTRRjnqA9ZwxWQ2N1A=='
+	}
+});
+var lightboxInlineIframe = GLightbox({'selector': 'glightbox4'});
