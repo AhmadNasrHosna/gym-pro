@@ -1,6 +1,11 @@
 .directory {
   margin-bottom: 6rem;
 
+  h3:first-of-type {
+    color: var(--color-1);
+    font-weight: 600;
+  }
+
   &__header {
     margin-bottom: 10rem;
     &__wrapper {
@@ -28,7 +33,7 @@
     width: 100%;
     z-index: 1;
     
-    h3 {
+    h2:first-of-type {
       color: #fff;
       @mixin font-size 4.7;
       font-family: var(--secondary-font);

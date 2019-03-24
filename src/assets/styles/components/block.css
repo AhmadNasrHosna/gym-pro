@@ -1,0 +1,13 @@
+.block {
+  border: 2px solid var(--border-3);
+  border-radius: 4px;
+  padding: 1em 1.6em;
+  background: hsla(0, 0%, 99%, 1);
+  box-shadow: 0 2px 2px hsla(0, 0%, 88%, .5);
+
+  h3 {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-1);
+  }
+}

@@ -15,7 +15,8 @@
   &__navbar {
     .container {
       display: flex;
-
+      align-items: center;
+      
       nav {
         margin-left: auto;
 
@@ -97,6 +98,7 @@
     .container {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     a {
