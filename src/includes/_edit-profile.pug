@@ -1,0 +1,45 @@
+main.site-content
+    .edit-profile
+      .container.container--narrow
+        h2 Edit profile
+        form.edit-profile__form.block(action="")
+          .form-control.block
+            label(for="firstName") First Name
+            input(type="text", id="firstName" placeholder="Your first name")
+          .form-control.block
+            label(for="lastName") Last Name
+            input(type="text", id="lastName" placeholder="Your last name")
+          .form-control.block
+            label(for="password") Password
+            input(type="password", id="password" placeholder="Your password here")
+          .form-control.block
+            label(for="emailAddress") Email Address
+            input(type="email", id="emailAddress" placeholder="Your email address")          
+          .form-control.block
+            label(for="city") City
+            input(type="text", id="city" placeholder="Your city")
+          .form-control.block
+            label(for="address") Address
+            input(type="text", id="address" placeholder="Your address")
+          .form-control.block
+            label(for="favQuote") Favorite Quote
+            textarea(id="favQuote" placeholder="Your favourite quote", style="resize: vertical")
+          .form-control.block
+            h4 Upload photos
+            .up-photos-input 
+              input#file-2.inputfile.inputfile-2(type='file', name='file-2[]', data-multiple-caption='{count} files selected', multiple='')
+              label(for='file-2')
+                <svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#000000" data-name="Layer 1" viewBox="0 0 24 24" x="0px" y="0px"><title>BBUI</title><path d="M20,4.25H4A1.75,1.75,0,0,0,2.25,6V18A1.75,1.75,0,0,0,4,19.75H20A1.75,1.75,0,0,0,21.75,18V6A1.75,1.75,0,0,0,20,4.25ZM4,5.75H20a.25.25,0,0,1,.25.25v9.5l-1.6-1.2a2.76,2.76,0,0,0-3.3,0l-2.07,1.55a.25.25,0,0,1-.34,0L10.41,13a2.75,2.75,0,0,0-3.89-.2L3.75,15.3V6A.25.25,0,0,1,4,5.75Zm16,12.5H4A.25.25,0,0,1,3.75,18v-.67l3.77-3.42a1.18,1.18,0,0,1,.9-.32,1.24,1.24,0,0,1,.87.41l2.54,2.83a1.74,1.74,0,0,0,2.35.23l2.07-1.55a1.25,1.25,0,0,1,1.5,0l2.5,1.87V18A.25.25,0,0,1,20,18.25Z"/><circle cx="16.75" cy="8.75" r="1.5"/></svg>
+                span Upload photos…
+          .form-control.social.block
+            h4 Social Media
+            .form-control
+              label(for="facebook") Facebook
+              input(type="text", id="facebook", placeholder="Your Facebook account") 
+            .form-control
+              label(for="twitter") Twitter
+              input(type="text", id="twitter", placeholder="Your Twitter account") 
+            .form-control
+              label(for="instagram") Instagram
+              input(type="text", id="instagram", placeholder="Your Instagram account") 
+          button(type="submit", class="button button--primary") Save
