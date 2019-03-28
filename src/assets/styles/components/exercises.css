@@ -157,3 +157,63 @@
     }
   }
 }
+
+
+
+.c-exercise {
+  padding-block: 4em;
+
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 290px auto;
+    grid-column-gap: 3rem;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    color: var(--color-1);
+    letter-spacing: -.02em;
+    font-weight: 900;
+  }
+
+  &__cover {
+    grid-column: 1 / 2;
+    grid-row: 2 / 8;
+
+    img {
+      border-radius: 4px;
+      box-shadow: 0 2px 6px hsla(0, 0%, 0%, .2);
+      height: 290px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__data {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+  }
+
+  &__details, &__workouts {
+    ul li {
+      display: flex;
+      > div {
+        flex-basis: 50%;
+
+        &:first-child {
+          p { font-weight: 600; }
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 2em;
+    grid-column: 1 / 2;
+    grid-row: 3;
+
+  }
+
+  
+}
