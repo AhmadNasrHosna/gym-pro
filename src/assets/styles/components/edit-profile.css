@@ -1,3 +1,18 @@
+.dropzone {
+  background: white;
+  border-radius: 5px;
+  border: 2px dashed var(--color-5);
+  border-image: none;
+
+  .dz-message {
+    color: var(--border-2);
+    font-weight: 400;
+    font-size: 23px;
+    font-family: var(--secondary-font);
+    font-weight: 800;
+  }
+}
+
 .edit-profile {
   padding-block: 4em;
 
@@ -112,6 +127,67 @@
 
     button[type=submit] {
       font-weight: 800;
+    }
+  }
+}
+
+.upload-photos {
+  h2:first-child {
+    margin-top: 7rem;
+  }
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .7rem !important;
+
+  .item {
+    flex-basis: 18%;
+    margin: 1%;
+
+    a {
+      display: block;
+      height: 130px;
+      position: relative;
+      cursor: default;
+      
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+        transition: all 100ms ease-in-out;
+      }
+
+      button {
+        position: absolute;
+        top: 10px; right: 10px;
+        width: 26px; height: 26px;
+        background: var(--color-5);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 100ms ease-in-out;
+      }
+
+      svg { 
+        fill: #fff;
+        width: 10px; height: 10px;
+
+      }
+
+      &:hover {
+
+        img {
+          box-shadow: 0 0 0 4px var(--color-2);
+        }
+
+        button {
+          background: var(--color-2);
+        }
+      }
     }
   }
 }

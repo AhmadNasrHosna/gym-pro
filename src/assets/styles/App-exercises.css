@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import 'dropzone.css';
 
 
 /* Settings – used with preprocessors and contain font, colors definitions, etc. */
@@ -44,7 +43,7 @@
 @import 'components/site-header';
 @import 'components/block';
 
-@import 'components/edit-profile';
+@import 'components/exercises';
 
 @import 'components/site-footer';
 
