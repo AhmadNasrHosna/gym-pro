@@ -35,6 +35,7 @@
 @import 'elements/forms';
 @import 'elements/button';
 @import 'elements/hr';
+@import 'elements/select';
 
 /* Objects – class-based selectors which define undecorated design patterns, for example media object known from OOCSS */
 @import 'objects/grid';

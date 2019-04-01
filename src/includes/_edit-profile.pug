@@ -24,6 +24,29 @@ main.site-content
         .form-control.block
           label(for="favQuote") Favorite Quote
           textarea(id="favQuote" placeholder="Your favourite quote", style="resize: vertical")
+        
+        .form-control.checkbox-wrapper.block
+          h4 Checkboxs Headline
+          .checkbox
+            input#checkbox_1(type='checkbox')
+            label(for='checkbox_1') checkbox1
+          .checkbox
+            input#checkbox_2(type='checkbox')
+            label(for='checkbox_2') checkbox2
+
+        .form-control.select-wrapper.block
+          h4 Select Headline
+          select.select-css(name="city")
+            option(selected disabled) City
+            option(value="cairo") Cairo
+            option(value="tanta") Tanta
+            option(value="alexandria") Alexandria       
+          select.select-css(name="Address")
+            option(selected disabled) City
+            option(value="cairo") Cairo
+            option(value="tanta") Tanta
+            option(value="alexandria") Alexandria         
+            
         .form-control.block
           h4 Upload photos
           .up-photos-input 
