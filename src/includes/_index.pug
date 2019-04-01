@@ -1,2 +1,55 @@
 main.site-content
-  | Index page content
+  section.c-section.search-hero
+    .container.container--narrow
+      .search-hero__inner
+        h3.c-section__title What do you want to search about?
+        form.search-hero__form(action="")
+          label.visually-hidden(for="search-hero-input") What do you want to search about?
+          input(type="search", id="search-hero-input" placeholder=" What do you want to search about?")
+          input(type="submit", value="Search")
+        .search-hero__tags
+          ul.list.list--inline.list--no-bullets
+            li
+              a(href="#0" class="search-hero__tag") Cairo
+            li
+              a(href="#0" class="search-hero__tag") Giza
+            li
+              a(href="#0" class="search-hero__tag") Alexandria
+            li
+              a(href="#0" class="search-hero__tag") Tanta
+            li
+              a(href="#0" class="search-hero__tag") Sharqia
+            li
+              a(href="#0" class="search-hero__tag") Mansoura
+            li
+              a(href="#0" class="search-hero__tag") Dameitta
+              
+  section.c-section.near-you
+    .container.container--narrow
+      .c-section__head
+        
+        
+  section.c-section
+    .container.container--narrow
+
+  section.c-section.stats
+    .container.container--narrow
+      .stats__inner
+        h2.c-section__title 
+          span We have much of gyms & fitness places from all over the world
+        .stats__gyms
+          .count 200
+            | +
+          span gym
+        .stats__trainers
+          .count 1400
+            | +
+          span Trainer
+        .stats__fitness-places
+          .count 200
+            | +
+          span Fitness place
+
+
+  p near you // js carouasel
+  p top trainers // js carouasel
