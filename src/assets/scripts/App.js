@@ -43,6 +43,33 @@ var lightboxVideo = GLightbox({
 });
 var lightboxInlineIframe = GLightbox({'selector': 'glightbox4'});
 
+// Header Menus
+
+const settingDrawer = document.querySelector('.setting-nav__drawer');
+const userNavDrawer = document.querySelector('.user-nav__drawer');
+
+document.addEventListener('click', (e) => {
+
+  const settingDrawerTrigger = e.target.closest('.setting-nav__drawer-toggle');
+  const userNavDrawerTrigger = e.target.closest('.user-nav__drawer-toggle');
+
+  showSettingDrawer(settingDrawerTrigger) // Show 
+  showUserNavDrawer(userNavDrawerTrigger) // Show 
+
+  function showSettingDrawer(target) {
+    if (target) {
+      settingDrawer.classList.toggle('drawer-is-open');
+      userNavDrawer.classList.remove('drawer-is-open');
+    }
+  }
+
+  function showUserNavDrawer(target) {
+    if (target) {
+      userNavDrawer.classList.toggle('drawer-is-open');
+      settingDrawer.classList.remove('drawer-is-open');
+    }
+  }
+})
 
 // ----------
 

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="theme-color" content="#000"><link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 <!-- edit:css-->
-    <link rel="stylesheet" href="assets/styles/App-edit.a0459d32.css">
+    <link rel="stylesheet" href="assets/styles/App-edit.3df5c356.css">
     <!-- endinject-->
     <!-- vendor:js--><script src="assets/scripts/vendor/Vendor.fd7d3c2e.js"></script><!-- endinject-->
   </head>
@@ -178,22 +178,31 @@
               </ul>
             </nav>
             <div class="site-header__user-nav">
-              <button class="user-nav__avatar button--plain"><a href="#"><img src="assets/images/user-avatar.jpg" width="34px" height="34px" alt="User Avatar">
-                  <div class="user-nav__avatar__icon">
-                    <svg width="7" height="7" viewBox="0 0 100 100" transform="rotate(-90)">
-                      <use xlink:href="#chevron-down-bold"></use>
-                    </svg>
-                  </div></a></button>
+              <button class="user-nav__drawer-toggle user-nav__avatar button--plain"><a href="#">
+                  <div class="avatar"><img src="assets/images/user-avatar.jpg" width="34px" height="34px" alt="User Avatar">
+                    <div class="user-nav__avatar__icon">
+                      <svg width="7" height="7" viewBox="0 0 100 100" transform="rotate(-90)">
+                        <use xlink:href="#chevron-down-bold"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <h5 class="user-nav__username no-m-bottom">Ahmed Nasr</h5></a></button>
+              <div class="user-nav__drawer">
+                <ul class="setting-nav__drawer__menu list list--no-bullets">
+                  <li><a href="#">Show Profile </a></li>
+                  <li><a href="#">Setting</a></li>
+                </ul>
+              </div>
             </div>
             <div class="site-header__setting-nav">
               <button class="setting-nav__drawer-toggle button--plain">
                 <div class="visually-hidden">Setting Menu</div><span></span>
               </button>
               <div class="setting-nav__drawer">
-                <ul class="setting-nav__drawer__menu list list--inline list--no-bullets">
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
+                <ul class="setting-nav__drawer__menu list list--no-bullets">
+                  <li><a href="#">Contact </a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -236,6 +245,17 @@
             <div class="form-control block">
               <label for="favQuote">Favorite Quote</label>
               <textarea id="favQuote" placeholder="Your favourite quote" style="resize: vertical"></textarea>
+            </div>
+            <div class="form-control radiobox-wrapper block">
+              <h4>Radioboxs Headline</h4>
+              <div class="radiobox">
+                <input id="radio_1" type="radio" name="option">
+                <label for="radio_1">Radio 1</label>
+              </div>
+              <div class="radiobox">
+                <input id="radio_2" type="radio" name="option">
+                <label for="radio_2">Radio 2</label>
+              </div>
             </div>
             <div class="form-control checkbox-wrapper block">
               <h4>Checkboxs Headline</h4>
@@ -434,7 +454,7 @@
       </div>
     </footer>
     <!-- inject:js-->
-    <script src="assets/scripts/App.a2caca10.js"></script>
+    <script src="assets/scripts/App.e9d2c372.js"></script>
     <!-- endinject -->
   </body>
 </html>

@@ -25,6 +25,15 @@ main.site-content
           label(for="favQuote") Favorite Quote
           textarea(id="favQuote" placeholder="Your favourite quote", style="resize: vertical")
         
+        .form-control.radiobox-wrapper.block
+          h4 Radioboxs Headline
+          .radiobox
+            input#radio_1(type='radio', name="option")
+            label(for='radio_1') Radio 1
+          .radiobox
+            input#radio_2(type='radio', name="option")
+            label(for='radio_2') Radio 2
+
         .form-control.checkbox-wrapper.block
           h4 Checkboxs Headline
           .checkbox
@@ -33,7 +42,6 @@ main.site-content
           .checkbox
             input#checkbox_2(type='checkbox')
             label(for='checkbox_2') checkbox2
-
         .form-control.select-wrapper.block
           h4 Select Headline
           select.select-css(name="city")

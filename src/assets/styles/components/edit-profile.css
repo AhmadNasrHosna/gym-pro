@@ -137,7 +137,7 @@
 
     }
 
-    .checkbox-wrapper {
+    .checkbox-wrapper, .radiobox-wrapper {
       display: flex;
       flex-wrap: wrap;
 

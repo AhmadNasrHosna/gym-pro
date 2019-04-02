@@ -41,6 +41,9 @@
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
 @import 'components/site-header';
+
+@import 'components/index';
+
 @import 'components/site-footer';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */

@@ -26,25 +26,32 @@ header.site-header
               a(href="#") Newsfeed
               
         .site-header__user-nav
-          button.user-nav__avatar.button--plain
+          button.user-nav__drawer-toggle.user-nav__avatar.button--plain
             a(href="#")
-              img(src="assets/images/user-avatar.jpg", width="34px", height="34px" alt="User Avatar")
-              .user-nav__avatar__icon
-                svg(width='7', height='7', viewBox='0 0 100 100', transform="rotate(-90)")
-                  use(xlink:href='#chevron-down-bold')
-
+              .avatar
+                img(src="assets/images/user-avatar.jpg", width="34px", height="34px" alt="User Avatar")
+                .user-nav__avatar__icon
+                  svg(width='7', height='7', viewBox='0 0 100 100', transform="rotate(-90)")
+                    use(xlink:href='#chevron-down-bold')
+              h5.user-nav__username.no-m-bottom Ahmed Nasr
+          .user-nav__drawer
+              ul.setting-nav__drawer__menu.list.list--no-bullets
+                li
+                  a(href="#") Show Profile 
+                li
+                  a(href="#") Setting
         .site-header__setting-nav
           button.setting-nav__drawer-toggle.button--plain
             div.visually-hidden Setting Menu
             span
           .setting-nav__drawer
-            ul.setting-nav__drawer__menu.list.list--inline.list--no-bullets
+            ul.setting-nav__drawer__menu.list.list--no-bullets
               li
-                a(href="#") Link
+                a(href="#") Contact 
               li
-                a(href="#") Link
+                a(href="#") About Us
               li
-                a(href="#") Link
+                a(href="#") Privacy Policy
         .site-header__notuser-components
           button.button.button--primary
             | Get Started
