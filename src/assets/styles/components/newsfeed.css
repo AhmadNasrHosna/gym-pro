@@ -16,6 +16,65 @@
     flex-basis: 60%;
   }
 
+  .post {
+    &__edit {
+      &__drawer {
+        background: #fff;
+        border-radius: 4px;
+        padding: .8em 0;
+        box-shadow: 0 2px 6px rgba(0,0,0,.13);
+        width: 140px;
+        position: absolute;
+        right: 1.6em;
+        top: 48px;
+        transition: all 200ms ease-in-out;
+        overflow: hidden;
+        transform-origin: 100% 0;
+
+        opacity: 0;
+        max-width: 0;
+        max-height: 0;
+        transform: scale(0); 
+
+        a {
+          padding: .2em 1em 0;
+          display: block;
+          font-size: 15px;
+          color: var(--color-1);
+          transition: all 140ms ease, opacity 400ms ease .3s;
+          white-space: nowrap;
+          opacity: 0;
+          overflow: hidden;
+
+          span {
+            transform: translateY(20px);
+            display: inline-block;
+            transition: transform 400ms ease .2s;
+          }
+
+          &:hover {
+            background: var(--border-1);
+          }
+        }
+
+        li:not(:last-child) a { border-bottom: 1px solid hsla(210, 8%, 91%, .6) }
+        
+        &.drawer-is-open {
+          opacity: 1;
+          max-width: 300px;
+          max-height: 300px;
+          transform: scale(1);
+          
+          a { 
+            opacity: 1;
+
+            span { transform: translateY(0) }
+          }
+        }
+      }
+    }
+  }
+
   .people-ymk {
     flex-basis: 40%;
     padding-left: 3.4rem;

@@ -1,7 +1,10 @@
 main.site-content
   .edit-profile
+    
     .container.container--narrow
       h2 Edit profile
+      .form__validation
+        .alert Lorem ipsum dolor sit amet.
       form.edit-profile__form.block(action="")
         .form-control.block
           label(for="firstName") First Name
@@ -75,8 +78,23 @@ main.site-content
             label(for="instagram") Instagram
             input(type="text", id="instagram", placeholder="Your Instagram account") 
         button(type="submit", class="button button--primary") Save
-
       
+      form.edit-profile__form.block(action="")
+        h3 Change password
+        .form-control.block
+          label(for="newpassword") Password
+          input(type="password", id="newpassword" placeholder="Write your new password ")
+        
+        button(type="submit", class="button button--primary") Save
+      
+      form.edit-profile__form.block(action="")
+        .form-control.block
+          .datepicker-wrapper
+            label(for='datepicker')
+              | Pick a Date
+              input#datepicker(type='text', autocomplete='off', placeholder="dd/mm/yyyy")
+
+                    
       section.upload-photos
         h2 Upload photos
         #dropzone.block

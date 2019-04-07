@@ -1,6 +1,30 @@
 .exercises {
   padding-block: 6rem;
 
+  .alert {
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 4px;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+
+    &.success {
+      background: #37b948;
+      max-height: 400px;
+      margin-bottom: 3rem;
+      padding: 1em;
+    }
+
+    &.danger {
+      background: #da0f33;
+      max-height: 400px;
+      margin-bottom: 3rem;
+      padding: 1em;
+    }
+  }
+  
   &__blocks {
 
     > h3:first-of-type {

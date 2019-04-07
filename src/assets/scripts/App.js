@@ -47,19 +47,25 @@ var lightboxInlineIframe = GLightbox({'selector': 'glightbox4'});
 
 const settingDrawer = document.querySelector('.setting-nav__drawer');
 const userNavDrawer = document.querySelector('.user-nav__drawer');
+const NotificationsDrawer = document.querySelector('.site-header__notifications__drawer');
+
+const postEditiButtons = document.querySelectorAll('.post__edit');
 
 document.addEventListener('click', (e) => {
 
   const settingDrawerTrigger = e.target.closest('.setting-nav__drawer-toggle');
   const userNavDrawerTrigger = e.target.closest('.user-nav__drawer-toggle');
+  const NotificationsDrawerTrigger = e.target.closest('.site-header__notifications__drawerTrigger');
 
-  showSettingDrawer(settingDrawerTrigger) // Show 
-  showUserNavDrawer(userNavDrawerTrigger) // Show 
+  showSettingDrawer(settingDrawerTrigger) 
+  showUserNavDrawer(userNavDrawerTrigger) 
+  showNotificationsDrawer(NotificationsDrawerTrigger)
 
   function showSettingDrawer(target) {
     if (target) {
       settingDrawer.classList.toggle('drawer-is-open');
       userNavDrawer.classList.remove('drawer-is-open');
+      NotificationsDrawer.classList.remove('drawer-is-open');
     }
   }
 
@@ -67,9 +73,22 @@ document.addEventListener('click', (e) => {
     if (target) {
       userNavDrawer.classList.toggle('drawer-is-open');
       settingDrawer.classList.remove('drawer-is-open');
+      NotificationsDrawer.classList.remove('drawer-is-open');
+    }
+  }
+
+  function showNotificationsDrawer(target) {
+    if (target) {
+      NotificationsDrawer.classList.toggle('drawer-is-open');
+      settingDrawer.classList.remove('drawer-is-open');
+      userNavDrawer.classList.remove('drawer-is-open');
     }
   }
 })
+
+postEditiButtons.forEach(btn => btn.addEventListener('click', (e) => {
+  btn.nextElementSibling.classList.toggle('drawer-is-open');
+}));
 
 
 // ----------
@@ -269,3 +288,12 @@ dropzone.uploadFiles = function(files) {
   }
 }
 
+// -- 
+
+// INCLUDE JQUERY & JQUERY UI 1.12.1
+$( function() {
+	$( "#datepicker" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );

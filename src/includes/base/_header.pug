@@ -40,6 +40,54 @@ header.site-header
                   a(href="#") Show Profile 
                 li
                   a(href="#") Setting
+        .site-header__notifications 
+          button.site-header__notifications__drawerTrigger.button--plain
+            span.visually-hidden Notification
+            svg(xmlns='http://www.w3.org/2000/svg', width='22', height='22',viewBox="0 0 512 512", version='1')
+              path(d='M256 0a53 53 0 0 0-53 61 11 11 0 0 0 14 9c25-8 53-8 78 0 3 0 6 0 9-2l5-8v-7c0-29-24-53-53-53z')
+              path(d='M320 427H192c-6 0-11 4-11 10a75 75 0 1 0 150 0c0-6-5-10-11-10z')
+              path(d='M455 388l-13-24c-28-49-45-105-47-161 0-85-45-147-115-158-40-7-81 5-112 32-34 30-52 73-51 118-1 60-17 118-48 169l-12 24a42 42 0 0 0 39 60h320a42 42 0 0 0 39-60z')
+              path(fill='#fff', d='M114 405a11 11 0 0 1-10-15l4-7c31-55 49-117 52-180 0-54 25-118 96-118a11 11 0 0 1 0 22c-69 0-75 73-75 96-2 67-21 132-54 190l-4 6c-2 4-5 6-9 6z')
+            .count 5
+          .site-header__notifications__drawer
+            ul.list.list--no-bullets
+              li
+                a(href="#0", class="notification")
+                  .notification__author
+                    img(src="assets/images/user-avatar.jpg", alt="Avatar")
+                    h5 Ahmed Nasr
+                    span 10 minutes ago
+                  .notification__content
+                    p Liked your post:
+                    span How to fit your body...
+              li
+                a(href="#0", class="notification")
+                  .notification__author
+                    img(src="assets/images/user-avatar.jpg", alt="Avatar")
+                    h5 Ahmed Nasr
+                    span 10 minutes ago
+                  .notification__content
+                    p Liked your post:
+                    span How to fit your body...
+              li
+                a(href="#0", class="notification")
+                  .notification__author
+                    img(src="assets/images/user-avatar.jpg", alt="Avatar")
+                    h5 Ahmed Nasr
+                    span 10 minutes ago
+                  .notification__content
+                    p Liked your post:
+                    span How to fit your body...
+              li
+                a(href="#0", class="notification")
+                  .notification__author
+                    img(src="assets/images/user-avatar.jpg", alt="Avatar")
+                    h5 Ahmed Nasr
+                    span 10 minutes ago
+                  .notification__content
+                    p Liked your post:
+                    span How to fit your body...
+
         .site-header__setting-nav
           button.setting-nav__drawer-toggle.button--plain
             div.visually-hidden Setting Menu

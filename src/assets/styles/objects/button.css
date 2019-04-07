@@ -46,7 +46,7 @@
   
   &--secondary {
     @mixin font-size 1.9;
-    padding: 0 1.3em;
+    padding: 0 1.1em;
     height: 3.8rem;
     line-height: 4rem;
     transition: opacity 200ms ease;
