@@ -263,7 +263,134 @@
               span.post__date 25 Jan, 2019
             .post__content
               p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis dolor cupiditate laudantium at architecto.
-              img(src="assets/images/prof-pic.jpeg", alt="Author Avatar")
+              div(style='--aspect-ratio: 2/1;')
+                iframe(width='560', height='315', src='https://www.youtube.com/embed/2mAS5aDyrfM', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+                 
+            .post__actions
+              button.post__like-button.button--plain Like
+              button.post__comment-button.button--plain Comments 
+                span.post__comments-count 20
+                | +
+              button.post__share-button.button--plain Share
+            .post__comments
+              .comment
+                header.comment__header
+                  .comment__author-avatar
+                    img(src="assets/images/user-avatar.jpg", alt="Author Avatar")
+                  h4.comment__author Ahmed Nasr
+                  span.comment__date 25 Jan, 2019
+                .comment__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, libero!
+              .comment
+                header.comment__header
+                  .comment__author-avatar
+                    img(src="assets/images/user-avatar.jpg", alt="Author Avatar")
+                  h4.comment__author Ahmed Nasr
+                  span.comment__date 25 Jan, 2019
+                .comment__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, libero!
+            .post__add-comment
+              form.add-comment(action="")
+                div(class="textarea-editable", contenteditable='true', data-placeholder='Write a comment..')
+                input(type="submit", class="button button--secondary button--color-5", value="Add")
+          .post.block
+            button.post__edit.button--plain …
+            .post__edit__drawer 
+              ul.list.list--no-bullets
+                li 
+                  a(href="#0", class)
+                    span Edit post
+                li 
+                  a(href="#0", class) 
+                    span Delete post
+                li 
+                  a(href="#0", class) 
+                    span Extra link
+
+            header.post__header
+              .post__author-avatar
+                img(src="assets/images/user-avatar.jpg", alt="Author Avatar")
+              h4.post__author Ahmed Nasr
+              span.post__date 25 Jan, 2019
+            .post__content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis dolor cupiditate laudantium at architecto.
+              img(src="assets/images/prof-pic.jpeg", alt="Image")
+                
+            .post__actions
+              button.post__like-button.button--plain Like
+              button.post__comment-button.button--plain Comments 
+                span.post__comments-count 20
+                | +
+              button.post__share-button.button--plain Share
+            .post__comments
+              .comment
+                header.comment__header
+                  .comment__author-avatar
+                    img(src="assets/images/user-avatar.jpg", alt="Author Avatar")
+                  h4.comment__author Ahmed Nasr
+                  span.comment__date 25 Jan, 2019
+                .comment__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, libero!
+              .comment
+                header.comment__header
+                  .comment__author-avatar
+                    img(src="assets/images/user-avatar.jpg", alt="Author Avatar")
+                  h4.comment__author Ahmed Nasr
+                  span.comment__date 25 Jan, 2019
+                .comment__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, libero!
+            .post__add-comment
+              form.add-comment(action="")
+                div(class="textarea-editable", contenteditable='true', data-placeholder='Write a comment..')
+                input(type="submit", class="button button--secondary button--color-5", value="Add")
+          .post.block
+            button.post__edit.button--plain …
+            .post__edit__drawer 
+              ul.list.list--no-bullets
+                li 
+                  a(href="#0", class)
+                    span Edit post
+                li 
+                  a(href="#0", class) 
+                    span Delete post
+                li 
+                  a(href="#0", class) 
+                    span Extra link
+
+            header.post__header
+              .post__author-avatar
+                img(src="assets/images/user-avatar.jpg", alt="Author Avatar")
+              h4.post__author Ahmed Nasr
+              span.post__date 25 Jan, 2019
+            .post__content
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis dolor cupiditate laudantium at architecto.
+              .images
+                ul.list.list--no-bullets.carousel(data-flickity)
+                  li.carousel-cell
+                    a.glightbox(href='assets/images/photo-1530822847156-5df684ec5ee1.jpeg')
+                      img(src='assets/images/photo-1530822847156-5df684ec5ee1.jpeg')
+                      svg(width='40', height='40')
+                        use(xlink:href='#icon-zoom-in')
+                      span.visually-hidden Zoom in
+                  li.carousel-cell
+                    a.glightbox(href='assets/images/prof-pic.jpeg')
+                      img(src='assets/images/prof-pic.jpeg', alt='image')
+                      svg(width='40', height='40')
+                        use(xlink:href='#icon-zoom-in')
+                      span.visually-hidden Zoom in
+                  li.carousel-cell
+                    a.glightbox(href='assets/images/photo-1530822847156-5df684ec5ee1.jpeg')
+                      img(src='assets/images/photo-1530822847156-5df684ec5ee1.jpeg', alt='image')
+                      svg(width='40', height='40')
+                        use(xlink:href='#icon-zoom-in')
+                      span.visually-hidden Zoom in
+                  li.carousel-cell
+                    a.glightbox(href='assets/images/prof-pic.jpeg')
+                      img(src='assets/images/prof-pic.jpeg', alt='image')
+                      svg(width='40', height='40')
+                        use(xlink:href='#icon-zoom-in')
+                      span.visually-hidden Zoom in
+
             .post__actions
               button.post__like-button.button--plain Like
               button.post__comment-button.button--plain Comments 
