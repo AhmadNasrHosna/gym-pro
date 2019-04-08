@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import 'glightbox.css';
 
 /* Settings – used with preprocessors and contain font, colors definitions, etc. */
 @import 'settings/fonts';

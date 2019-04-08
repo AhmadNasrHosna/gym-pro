@@ -292,6 +292,10 @@ function modernizrTask() {
  * ◘◘◘◘◘◘ Build ◘◘◘◘◘◘◘ *
  * ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ */
 
+function deleteTmpFolder() { 
+    return del(tempDir);
+}
+
 function deleteDistFolder() { // Begin build with delete the current build folder (dist);
     return del(buildDir);
 }
@@ -422,6 +426,7 @@ exports.scripts = scripts;
 
 exports.modernizrTask = modernizrTask;
 
+exports.deleteTmpFolder = deleteTmpFolder;
 exports.deleteDistFolder = deleteDistFolder;
 exports.optimizeImages = optimizeImages;
 exports.revFiles = revFiles;
@@ -467,9 +472,11 @@ task("default", parallel(
  * ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ */
 
 task("build", series(
+
     deleteDistFolder, // Begin build with delete the current build folder (dist);
     // Build a new one
     'icons',
+    deleteTmpFolder,
     styles,
     html,
     modernizrTask,
