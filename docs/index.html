@@ -2,13 +2,13 @@
 <html class="no-js" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Good Gym | Edit profile</title>
+    <title>Good Gym</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="theme-color" content="#000"><link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<!-- edit:css-->
-    <link rel="stylesheet" href="assets/styles/App-edit.eb3dc033.css">
+<!-- index:css-->
+    <link rel="stylesheet" href="assets/styles/App-index.cfbfeb52.css">
     <!-- endinject-->
     <!-- vendor:js--><script src="assets/scripts/vendor/Vendor.68e107fe.js"></script><!-- endinject-->
   </head>
@@ -273,220 +273,151 @@
       </div>
     </header>
     <main class="site-content">
-      <div class="edit-profile">
+      <section class="c-section search-hero">
         <div class="container container--narrow">
-          <h2>Edit profile</h2>
-          <div class="form__validation">
-            <div class="alert">Lorem ipsum dolor sit amet.</div>
-          </div>
-          <form class="edit-profile__form block" action="">
-            <div class="form-control block">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" placeholder="Your first name">
-            </div>
-            <div class="form-control block">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" placeholder="Your last name">
-            </div>
-            <div class="form-control block">
-              <label for="password">Password</label>
-              <input type="password" id="password" placeholder="Your password here">
-            </div>
-            <div class="form-control block">
-              <label for="emailAddress">Email Address</label>
-              <input type="email" id="emailAddress" placeholder="Your email address">
-            </div>
-            <div class="form-control block">
-              <label for="city">City</label>
-              <input type="text" id="city" placeholder="Your city">
-            </div>
-            <div class="form-control block">
-              <label for="address">Address</label>
-              <input type="text" id="address" placeholder="Your address">
-            </div>
-            <div class="form-control block">
-              <label for="favQuote">Favorite Quote</label>
-              <textarea id="favQuote" placeholder="Your favourite quote" style="resize: vertical"></textarea>
-            </div>
-            <div class="form-control radiobox-wrapper block">
-              <h4>Radioboxs Headline</h4>
-              <div class="radiobox">
-                <input id="radio_1" type="radio" name="option">
-                <label for="radio_1">Radio 1</label>
-              </div>
-              <div class="radiobox">
-                <input id="radio_2" type="radio" name="option">
-                <label for="radio_2">Radio 2</label>
-              </div>
-            </div>
-            <div class="form-control checkbox-wrapper block">
-              <h4>Checkboxs Headline</h4>
-              <div class="checkbox">
-                <input id="checkbox_1" type="checkbox">
-                <label for="checkbox_1">checkbox1</label>
-              </div>
-              <div class="checkbox">
-                <input id="checkbox_2" type="checkbox">
-                <label for="checkbox_2">checkbox2</label>
-              </div>
-            </div>
-            <div class="form-control select-wrapper block">
-              <h4>Select Headline</h4>
-              <select class="select-css" name="city">
-                <option selected disabled>City</option>
-                <option value="cairo">Cairo</option>
-                <option value="tanta">Tanta</option>
-                <option value="alexandria">Alexandria       </option>
-              </select>
-              <select class="select-css" name="Address">
-                <option selected disabled>City</option>
-                <option value="cairo">Cairo</option>
-                <option value="tanta">Tanta</option>
-                <option value="alexandria">Alexandria         </option>
-              </select>
-            </div>
-            <div class="form-control block">
-              <h4>Upload photos</h4>
-              <div class="up-photos-input"> 
-                <input class="inputfile inputfile-2" id="file-2" type="file" name="file-2[]" data-multiple-caption="{count} files selected" multiple="">
-                <label for="file-2"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#000000" data-name="Layer 1" viewBox="0 0 24 24" x="0px" y="0px"><title>BBUI</title><path d="M20,4.25H4A1.75,1.75,0,0,0,2.25,6V18A1.75,1.75,0,0,0,4,19.75H20A1.75,1.75,0,0,0,21.75,18V6A1.75,1.75,0,0,0,20,4.25ZM4,5.75H20a.25.25,0,0,1,.25.25v9.5l-1.6-1.2a2.76,2.76,0,0,0-3.3,0l-2.07,1.55a.25.25,0,0,1-.34,0L10.41,13a2.75,2.75,0,0,0-3.89-.2L3.75,15.3V6A.25.25,0,0,1,4,5.75Zm16,12.5H4A.25.25,0,0,1,3.75,18v-.67l3.77-3.42a1.18,1.18,0,0,1,.9-.32,1.24,1.24,0,0,1,.87.41l2.54,2.83a1.74,1.74,0,0,0,2.35.23l2.07-1.55a1.25,1.25,0,0,1,1.5,0l2.5,1.87V18A.25.25,0,0,1,20,18.25Z"/><circle cx="16.75" cy="8.75" r="1.5"/></svg><span>Upload photos…</span></label>
-              </div>
-            </div>
-            <div class="form-control social block">
-              <h4>Social Media</h4>
-              <div class="form-control">
-                <label for="facebook">Facebook</label>
-                <input type="text" id="facebook" placeholder="Your Facebook account">
-              </div>
-              <div class="form-control">
-                <label for="twitter">Twitter</label>
-                <input type="text" id="twitter" placeholder="Your Twitter account">
-              </div>
-              <div class="form-control">
-                <label for="instagram">Instagram</label>
-                <input type="text" id="instagram" placeholder="Your Instagram account">
-              </div>
-            </div>
-            <button class="button button--primary" type="submit">Save</button>
-          </form>
-          <form class="edit-profile__form block" action="">
-            <h3>Change password</h3>
-            <div class="form-control block">
-              <label for="newpassword">Password</label>
-              <input type="password" id="newpassword" placeholder="Write your new password ">
-            </div>
-            <button class="button button--primary" type="submit">Save</button>
-          </form>
-          <form class="edit-profile__form block" action="">
-            <div class="form-control block">
-              <div class="datepicker-wrapper">
-                <label for="datepicker">Pick a Date
-                  <input id="datepicker" type="text" autocomplete="off" placeholder="dd/mm/yyyy">
-                </label>
-              </div>
-            </div>
-          </form>
-          <section class="upload-photos">
-            <h2>Upload photos</h2>
-            <div class="block" id="dropzone">
-              <form class="dropzone needsclick" id="demo-upload" action="/upload">
-                <div class="dz-message needsclick">Drop files here or click to upload.</div>
-              </form>
-              <div id="preview-template" style="display: none;">
-                <div class="dz-preview dz-file-preview">
-                  <div class="dz-image"><img data-dz-thumbnail=""></div>
-                  <div class="dz-details">
-                    <div class="dz-size"><span data-dz-size=""></span></div>
-                    <div class="dz-filename"><span data-dz-name=""></span></div>
-                  </div>
-                  <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
-                  <div class="dz-error-message"><span data-dz-errormessage=""></span></div>
-                  <div class="dz-success-mark">
-                    <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                      <title>Check</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                        <path id="Oval-2" d="M23.5,31.8431458 L17.5852419,25.9283877 C16.0248253,24.3679711 13.4910294,24.366835 11.9289322,25.9289322 C10.3700136,27.4878508 10.3665912,30.0234455 11.9283877,31.5852419 L20.4147581,40.0716123 C20.5133999,40.1702541 20.6159315,40.2626649 20.7218615,40.3488435 C22.2835669,41.8725651 24.794234,41.8626202 26.3461564,40.3106978 L43.3106978,23.3461564 C44.8771021,21.7797521 44.8758057,19.2483887 43.3137085,17.6862915 C41.7547899,16.1273729 39.2176035,16.1255422 37.6538436,17.6893022 L23.5,31.8431458 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" stroke-opacity="0.198794158" stroke="#747474" fill-opacity="0.816519475" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="dz-error-mark">
-                    <svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                      <title>error</title>
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                        <g id="Check-+-Oval-2" sketch:type="MSLayerGroup" stroke="#747474" stroke-opacity="0.198794158" fill="#FFFFFF" fill-opacity="0.816519475">
-                          <path id="Oval-2" d="M32.6568542,29 L38.3106978,23.3461564 C39.8771021,21.7797521 39.8758057,19.2483887 38.3137085,17.6862915 C36.7547899,16.1273729 34.2176035,16.1255422 32.6538436,17.6893022 L27,23.3431458 L21.3461564,17.6893022 C19.7823965,16.1255422 17.2452101,16.1273729 15.6862915,17.6862915 C14.1241943,19.2483887 14.1228979,21.7797521 15.6893022,23.3461564 L21.3431458,29 L15.6893022,34.6538436 C14.1228979,36.2202479 14.1241943,38.7516113 15.6862915,40.3137085 C17.2452101,41.8726271 19.7823965,41.8744578 21.3461564,40.3106978 L27,34.6568542 L32.6538436,40.3106978 C34.2176035,41.8744578 36.7547899,41.8726271 38.3137085,40.3137085 C39.8758057,38.7516113 39.8771021,36.2202479 38.3106978,34.6538436 L32.6568542,29 Z M27,53 C41.3594035,53 53,41.3594035 53,27 C53,12.6405965 41.3594035,1 27,1 C12.6405965,1 1,12.6405965 1,27 C1,41.3594035 12.6405965,53 27,53 Z" sketch:type="MSShapeGroup"></path>
-                        </g>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="all-photos">
-              <ul class="list list--no-bullets images block">
-                <li class="item"><a href="#0"><img src="assets/images/photo-1530822847156-5df684ec5ee1.jpeg">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold">  </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/prof-pic.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/photo-1530822847156-5df684ec5ee1.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/prof-pic.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/photo-1530822847156-5df684ec5ee1.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/prof-pic.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/photo-1530822847156-5df684ec5ee1.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/prof-pic.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
-                <li class="item"><a href="#0"><img src="assets/images/photo-1530822847156-5df684ec5ee1.jpeg" alt="image">
-                    <button class="button--plain remove-image-button">
-                      <svg width="14" height="14" viewBox="0 0 24 24">
-                        <use xlink:href="#close-exbold"> </use>
-                      </svg>
-                    </button></a></li>
+          <div class="search-hero__inner">
+            <h3 class="c-section__title">What do you want to search about?</h3>
+            <form class="search-hero__form" action="">
+              <label class="visually-hidden" for="search-hero-input">What do you want to search about?</label>
+              <input type="search" id="search-hero-input" placeholder=" What do you want to search about?">
+              <input type="submit" value="Search">
+            </form>
+            <div class="search-hero__tags">
+              <ul class="list list--inline list--no-bullets">
+                <li><a class="search-hero__tag" href="#0">Cairo</a></li>
+                <li><a class="search-hero__tag" href="#0">Giza</a></li>
+                <li><a class="search-hero__tag" href="#0">Alexandria</a></li>
+                <li><a class="search-hero__tag" href="#0">Tanta</a></li>
+                <li><a class="search-hero__tag" href="#0">Sharqia</a></li>
+                <li><a class="search-hero__tag" href="#0">Mansoura</a></li>
+                <li><a class="search-hero__tag" href="#0">Dameitta</a></li>
               </ul>
             </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="c-section near-you">
+        <div class="container container--narrow">
+          <h2 class="c-section__title">Best Trainers</h2>
+          <div class="slider--teams">
+            <div class="slider--teams__team">
+              <ul class="cf" id="list">
+                <li>
+                  <figure class="active"><img src="assets/images/user-avatar.jpg" alt="Avatar">
+                    <figcaption><a class="trainer" href="#">
+                        <h2>Ahmed Nasr</h2>
+                        <p>Trainer</p>
+                        <div class="rate">
+                          <div class="rate__inner">
+                            <svg height="32px" width="32px" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                              <path d="M46,26.4l-5.6-0.8c-1.5-0.2-2.8-1.1-3.5-2.5L34.4,18c-0.6-1.3-2.2-1.8-3.5-1.2c-0.5,0.3-0.9,0.7-1.2,1.2l-2.5,5.1  c-0.7,1.4-2,2.3-3.5,2.5l-5.6,0.8c-1.4,0.2-2.4,1.5-2.2,2.9c0.1,0.6,0.3,1.1,0.7,1.5l4.1,4c1,1,1.5,2.5,1.3,4l-1,5.6  c-0.2,1.4,0.7,2.7,2.1,3c0.6,0.1,1.1,0,1.6-0.3l5-2.7c1.3-0.7,2.9-0.7,4.3,0l5,2.7c1.3,0.7,2.8,0.2,3.5-1.1c0.3-0.5,0.4-1.1,0.3-1.6  l-1-5.6c-0.3-1.5,0.2-3,1.3-4.1l4.1-4c1-1,1-2.6,0-3.7c-0.4-0.4-0.9-0.7-1.5-0.7L46,26.4z"></path>
+                            </svg><span class="rate-count">5</span>/5
+                          </div>
+                        </div></a></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-tqwmh3bRW-AA79QA8oUuX5yr3HVunpv8E1d2NamjjYeGEXo" alt="Avatar">
+                    <figcaption><a class="trainer" href="#">
+                        <h2>Maged Mokhtar</h2>
+                        <p>Trainer</p>
+                        <div class="rate">
+                          <div class="rate__inner">
+                            <svg height="32px" width="32px" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                              <path d="M46,26.4l-5.6-0.8c-1.5-0.2-2.8-1.1-3.5-2.5L34.4,18c-0.6-1.3-2.2-1.8-3.5-1.2c-0.5,0.3-0.9,0.7-1.2,1.2l-2.5,5.1  c-0.7,1.4-2,2.3-3.5,2.5l-5.6,0.8c-1.4,0.2-2.4,1.5-2.2,2.9c0.1,0.6,0.3,1.1,0.7,1.5l4.1,4c1,1,1.5,2.5,1.3,4l-1,5.6  c-0.2,1.4,0.7,2.7,2.1,3c0.6,0.1,1.1,0,1.6-0.3l5-2.7c1.3-0.7,2.9-0.7,4.3,0l5,2.7c1.3,0.7,2.8,0.2,3.5-1.1c0.3-0.5,0.4-1.1,0.3-1.6  l-1-5.6c-0.3-1.5,0.2-3,1.3-4.1l4.1-4c1-1,1-2.6,0-3.7c-0.4-0.4-0.9-0.7-1.5-0.7L46,26.4z"></path>
+                            </svg><span class="rate-count">4</span>/5
+                          </div>
+                        </div></a></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure><img src="https://images.askmen.com/1080x540/2016/01/25-021526-facebook_profile_picture_affects_chances_of_getting_hired.jpg" alt="Avatar">
+                    <figcaption><a class="trainer" href="#">
+                        <h2>Wendy Rogers</h2>
+                        <p>GYM</p>
+                        <div class="rate">
+                          <div class="rate__inner">
+                            <svg height="32px" width="32px" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                              <path d="M46,26.4l-5.6-0.8c-1.5-0.2-2.8-1.1-3.5-2.5L34.4,18c-0.6-1.3-2.2-1.8-3.5-1.2c-0.5,0.3-0.9,0.7-1.2,1.2l-2.5,5.1  c-0.7,1.4-2,2.3-3.5,2.5l-5.6,0.8c-1.4,0.2-2.4,1.5-2.2,2.9c0.1,0.6,0.3,1.1,0.7,1.5l4.1,4c1,1,1.5,2.5,1.3,4l-1,5.6  c-0.2,1.4,0.7,2.7,2.1,3c0.6,0.1,1.1,0,1.6-0.3l5-2.7c1.3-0.7,2.9-0.7,4.3,0l5,2.7c1.3,0.7,2.8,0.2,3.5-1.1c0.3-0.5,0.4-1.1,0.3-1.6  l-1-5.6c-0.3-1.5,0.2-3,1.3-4.1l4.1-4c1-1,1-2.6,0-3.7c-0.4-0.4-0.9-0.7-1.5-0.7L46,26.4z"></path>
+                            </svg><span class="rate-count">5</span>/5
+                          </div>
+                        </div></a></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure><img src="http://portal.bilardo.gov.tr/assets/pages/media/profile/profile_user.jpg" alt="Avatar">
+                    <figcaption><a class="trainer" href="#">
+                        <h2>Bill Demon</h2>
+                        <p>GYM</p>
+                        <div class="rate">
+                          <div class="rate__inner">
+                            <svg height="32px" width="32px" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                              <path d="M46,26.4l-5.6-0.8c-1.5-0.2-2.8-1.1-3.5-2.5L34.4,18c-0.6-1.3-2.2-1.8-3.5-1.2c-0.5,0.3-0.9,0.7-1.2,1.2l-2.5,5.1  c-0.7,1.4-2,2.3-3.5,2.5l-5.6,0.8c-1.4,0.2-2.4,1.5-2.2,2.9c0.1,0.6,0.3,1.1,0.7,1.5l4.1,4c1,1,1.5,2.5,1.3,4l-1,5.6  c-0.2,1.4,0.7,2.7,2.1,3c0.6,0.1,1.1,0,1.6-0.3l5-2.7c1.3-0.7,2.9-0.7,4.3,0l5,2.7c1.3,0.7,2.8,0.2,3.5-1.1c0.3-0.5,0.4-1.1,0.3-1.6  l-1-5.6c-0.3-1.5,0.2-3,1.3-4.1l4.1-4c1-1,1-2.6,0-3.7c-0.4-0.4-0.9-0.7-1.5-0.7L46,26.4z"></path>
+                            </svg><span class="rate-count">3</span>/5
+                          </div>
+                        </div></a></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure><img src="http://ap.church/wp-content/uploads/2018/08/Brian-Jones-Profile.jpg" alt="Avatar">
+                    <figcaption><a class="trainer" href="#">
+                        <h2>Lorraine Yankki</h2>
+                        <p>Trainer </p>
+                        <div class="rate">
+                          <div class="rate__inner">
+                            <svg height="32px" width="32px" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                              <path d="M46,26.4l-5.6-0.8c-1.5-0.2-2.8-1.1-3.5-2.5L34.4,18c-0.6-1.3-2.2-1.8-3.5-1.2c-0.5,0.3-0.9,0.7-1.2,1.2l-2.5,5.1  c-0.7,1.4-2,2.3-3.5,2.5l-5.6,0.8c-1.4,0.2-2.4,1.5-2.2,2.9c0.1,0.6,0.3,1.1,0.7,1.5l4.1,4c1,1,1.5,2.5,1.3,4l-1,5.6  c-0.2,1.4,0.7,2.7,2.1,3c0.6,0.1,1.1,0,1.6-0.3l5-2.7c1.3-0.7,2.9-0.7,4.3,0l5,2.7c1.3,0.7,2.8,0.2,3.5-1.1c0.3-0.5,0.4-1.1,0.3-1.6  l-1-5.6c-0.3-1.5,0.2-3,1.3-4.1l4.1-4c1-1,1-2.6,0-3.7c-0.4-0.4-0.9-0.7-1.5-0.7L46,26.4z"></path>
+                            </svg><span class="rate-count">4</span>/5
+                          </div>
+                        </div></a></figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure><img src="https://i0.wp.com/animalenergytherapies.com/wp-content/uploads/2018/04/profile-1.jpg" alt="Avatar">
+                    <figcaption><a class="trainer" href="#">
+                        <h2>Mohamed Fathy</h2>
+                        <p>Trainer</p>
+                        <div class="rate">
+                          <div class="rate__inner">
+                            <svg height="32px" width="32px" version="1.1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                              <path d="M46,26.4l-5.6-0.8c-1.5-0.2-2.8-1.1-3.5-2.5L34.4,18c-0.6-1.3-2.2-1.8-3.5-1.2c-0.5,0.3-0.9,0.7-1.2,1.2l-2.5,5.1  c-0.7,1.4-2,2.3-3.5,2.5l-5.6,0.8c-1.4,0.2-2.4,1.5-2.2,2.9c0.1,0.6,0.3,1.1,0.7,1.5l4.1,4c1,1,1.5,2.5,1.3,4l-1,5.6  c-0.2,1.4,0.7,2.7,2.1,3c0.6,0.1,1.1,0,1.6-0.3l5-2.7c1.3-0.7,2.9-0.7,4.3,0l5,2.7c1.3,0.7,2.8,0.2,3.5-1.1c0.3-0.5,0.4-1.1,0.3-1.6  l-1-5.6c-0.3-1.5,0.2-3,1.3-4.1l4.1-4c1-1,1-2.6,0-3.7c-0.4-0.4-0.9-0.7-1.5-0.7L46,26.4z"></path>
+                            </svg><span class="rate-count">5</span>/5
+                          </div>
+                        </div></a></figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="c-section stats">
+        <div class="container container--narrow">
+          <div class="stats__inner">
+            <h2 class="c-section__title"> <span>We have much of gyms & fitness places from all over the world</span></h2>
+            <div class="stats__gyms">
+              <div class="count">
+                200+</div><span>gym</span>
+            </div>
+            <div class="stats__trainers">
+              <div class="count">
+                1400+</div><span>Trainer</span>
+            </div>
+            <div class="stats__fitness-places">
+              <div class="count">
+                200+</div><span>Fitness place</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="c-section get-started">
+        <div class="container container--narrow">
+          <div class="get-started__inner">
+            <h2 class="c-section__title">Find Gyms & trainers & fitness places near you</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sequi.</p><a class="get-started-cta get-started-cta button button--primary button--color-5" href="#">Get started today</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="site-footer__navbar">
