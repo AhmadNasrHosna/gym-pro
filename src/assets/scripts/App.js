@@ -1,6 +1,8 @@
 
 import GLightbox from 'glightbox'
 
+// ----------
+
 ;( function ( document, window, index )
 {
 	var inputs = document.querySelectorAll( '.inputfile' );
